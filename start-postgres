@@ -1,0 +1,10 @@
+start with:
+pg_ctl start -l logfile -D pg/
+
+where logfile is a file to log to (derrr)
+and pg/ is the data dir
+
+If 
+psql "database name"
+doesn't work, try a sym link like:
+sudo ln -s /tmp/.s.PGSQL.5432 /var/run/postgresql/.s.PGSQL.5432
